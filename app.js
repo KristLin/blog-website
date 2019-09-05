@@ -8,8 +8,10 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+var homeContent = "This is the content of the home page.";
+
 app.get("/", function(req, res) {
-  res.render("home");
+  res.render("home", {homeContent: homeContent});
 });
 
 
