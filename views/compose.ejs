@@ -1,0 +1,22 @@
+<%- include("patials/header") -%>
+
+<div class="container">
+  <h1>Compose</h1>
+
+
+  <form class="" action="/compose" method="post">
+    <div class="form-group">
+      <label for="" class="post-label">Title</label>
+      <input class="form-control" type="text" name="postTitle" value="">
+    </div>
+
+    <div class="form-group">
+      <label for="" class="post-label">Post</label>
+      <textarea class="form-control" name="postContent" rows="10" cols="30"></textarea>
+    </div>
+
+    <button class="btn btn-dark" type="submit" name="button">Publish</button>
+  </form>
+</div>
+
+<%- include("patials/footer") -%>
