@@ -6,11 +6,11 @@ This Project is based on Angela's online web development course on Udemy.
 The course link: https://www.udemy.com/course/the-complete-web-development-bootcamp/
 
 # Screenshots
-## home-page
+home-page
 ![home-page](screenshots/home-page.png)
-## contact-page
+contact-page
 ![home-page](screenshots/contact-page.png)
-## post-page
+post-page
 ![home-page](screenshots/post-page.png)
-## compose-page
+compose-page
 ![home-page](screenshots/compose-page.png)
