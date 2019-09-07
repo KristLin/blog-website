@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const _ = require("lodash");
 
 const app = express();
 app.set("view engine", "ejs");
@@ -41,6 +42,24 @@ app.post("/compose", function(req, res) {
   posts.push(newPost);
   res.redirect("/");
 });
+
+app.get("/posts/:postTitle", function(req, res) {
+  const postTitle = _.lowerCase(req.params.postTitle);
+  var find = false;
+  posts.forEach(function(post) {
+    const storedPostTitle = _.lowerCase(post.title);
+    if(storedPostTitle === postTitle) {
+      find = true;
+      res.render("post", {post: post});
+    }
+  });
+  if(!find) {
+    res.render("404");
+  }
+
+});
+
+
 
 app.listen(3000, function() {
   console.log("Server is running on port 3000");
