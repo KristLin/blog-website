@@ -27,7 +27,7 @@ const Post = mongoose.model("Post", postSchema);
 
 // default content for different pages
 var homeContent = "This is the content of the home page.";
-var aboutContent = "This is the content of the about page.";
+var aboutContent = "This is a simple blog website.";
 var contactContent = "This is the content of the contact page.";
 
 // get home page
